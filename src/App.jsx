@@ -36,7 +36,11 @@ export default function App() {
           <Input label="비밀번호 확인" name="passwordConfirm" type="password" placeholder="비밀번호를 다시 입력해주세요" value={form.passwordConfirm} onChange={handleChange} autoComplete="new-password" />
 
           <div className="mt-3">
-            <Button text="회원가입" type="submit" disabled={!isComplete} />
+            <Button
+              text={submitted ? '가입 완료!' : '회원가입'}
+              type="submit"
+              disabled={!isComplete}
+            />
           </div>
 
           {submitted && <p className="body-sm text-center font-semibold text-primary-200" role="status">입력이 완료되었습니다.</p>}
