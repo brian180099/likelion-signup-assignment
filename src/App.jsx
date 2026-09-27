@@ -37,9 +37,10 @@ export default function App() {
 
           <div className="mt-3">
             <Button
-              text={submitted ? '가입 완료!' : '회원가입'}
+              text="회원가입"
               type="submit"
               disabled={!isComplete}
+              active={submitted}
             />
           </div>
 

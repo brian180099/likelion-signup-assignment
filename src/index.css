@@ -79,10 +79,10 @@
   }
 
   .button-primary {
-    @apply h-12 w-full rounded-xl bg-primary-500 px-4 text-lg font-semibold leading-[1.4] text-primary-100 shadow-[0_6px_0_#0a997d] transition-all duration-150 hover:bg-primary-600 active:translate-y-1 active:scale-[0.98] active:bg-primary-200 active:shadow-[0_2px_0_#03332a] disabled:cursor-not-allowed disabled:bg-neutral-100 disabled:text-neutral-200 disabled:shadow-none disabled:active:translate-y-0 disabled:active:scale-100;
+    @apply h-12 w-full rounded-lg bg-primary-500 px-4 text-lg font-semibold leading-[1.4] text-primary-100 transition-all duration-150 hover:bg-primary-600 active:translate-y-0.5 active:scale-[0.97] active:bg-primary-700 disabled:cursor-not-allowed disabled:bg-neutral-100 disabled:text-neutral-200 disabled:active:translate-y-0 disabled:active:scale-100;
   }
 
-  .button-clicked {
-    @apply translate-y-1 scale-[0.98] bg-primary-200 text-white shadow-[0_2px_0_#03332a];
+  .button-primary.button-clicked {
+    @apply translate-y-0.5 scale-[0.97] bg-primary-700;
   }
 }
