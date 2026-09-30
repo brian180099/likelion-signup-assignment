@@ -3,15 +3,15 @@
 @theme {
 	/* Primary */
 
-  --color-primary-100: #03332A;
-  --color-primary-200: #066654;
-  --color-primary-300: #0A997D;
-  --color-primary-400: #0DCCA7;
+  --color-primary-100: #CFFFF6;
+  --color-primary-200: #9FFFED;
+  --color-primary-300: #70FFE3;
+  --color-primary-400: #40FFDA;
   --color-primary-500: #10FFD1;
-  --color-primary-600: #40FFDA;
-  --color-primary-700: #70FFE3;
-  --color-primary-800: #9FFFED;
-  --color-primary-900: #CFFFF6;
+  --color-primary-600: #0DCCA7;
+  --color-primary-700: #0A997D;
+  --color-primary-800: #066654;
+  --color-primary-900: #03332A;
 	
   /* Neutral */
   --color-neutral-100: #D3D3D3;
@@ -71,18 +71,18 @@
   }
 
   .input-field {
-    @apply h-12 w-full rounded-xl border border-neutral-100 bg-white px-4 text-base font-normal leading-[1.4] text-neutral-500 outline-none transition duration-150 placeholder:text-neutral-200 hover:border-primary-300 focus:border-primary-300 focus:ring-4 focus:ring-primary-800 disabled:cursor-not-allowed disabled:border-neutral-100 disabled:bg-neutral-100 disabled:text-neutral-300 disabled:placeholder:text-neutral-200;
+    @apply h-12 w-full rounded-xl border border-neutral-100 bg-white px-4 text-base font-normal leading-[1.4] text-neutral-500 outline-none transition duration-150 placeholder:text-neutral-200 hover:border-primary-700 focus:border-primary-700 focus:ring-4 focus:ring-primary-200 disabled:cursor-not-allowed disabled:border-neutral-100 disabled:bg-neutral-100 disabled:text-neutral-300 disabled:placeholder:text-neutral-200;
   }
 
   .input-filled {
-    @apply border-primary-200 bg-primary-900/25;
+    @apply border-primary-800 bg-primary-100/25;
   }
 
   .button-primary {
-    @apply h-12 w-full rounded-lg bg-primary-500 px-4 text-lg font-semibold leading-[1.4] text-primary-100 transition-all duration-150 hover:bg-primary-600 active:translate-y-0.5 active:scale-[0.97] active:bg-primary-700 disabled:cursor-not-allowed disabled:bg-neutral-100 disabled:text-neutral-200 disabled:active:translate-y-0 disabled:active:scale-100;
+    @apply h-12 w-full rounded-lg bg-primary-500 px-4 text-lg font-semibold leading-[1.4] text-primary-900 transition-all duration-150 hover:bg-primary-600 active:translate-y-0.5 active:scale-[0.97] active:bg-primary-700 active:text-white disabled:cursor-not-allowed disabled:bg-neutral-100 disabled:text-neutral-200 disabled:active:translate-y-0 disabled:active:scale-100;
   }
 
   .button-primary.button-clicked {
-    @apply translate-y-0.5 scale-[0.97] bg-primary-700;
+    @apply translate-y-0.5 scale-[0.97] bg-primary-700 text-white;
   }
 }
