@@ -71,15 +71,15 @@
   }
 
   .input-field {
-    @apply h-12 w-full rounded-xl border border-neutral-100 bg-white px-4 text-base font-normal leading-[1.4] text-neutral-500 outline-none transition duration-150 placeholder:text-neutral-200 hover:border-primary-700 focus:border-primary-700 focus:ring-4 focus:ring-primary-200 disabled:cursor-not-allowed disabled:border-neutral-100 disabled:bg-neutral-100 disabled:text-neutral-300 disabled:placeholder:text-neutral-200;
+    @apply h-7 w-full rounded-lg border border-primary-200 bg-primary-100/70 px-3 text-xs font-normal leading-[1.4] text-neutral-500 outline-none transition duration-150 placeholder:text-neutral-200 hover:border-primary-700 focus:border-primary-700 focus:bg-white disabled:cursor-not-allowed disabled:border-neutral-100 disabled:bg-neutral-100 disabled:text-neutral-300 disabled:placeholder:text-neutral-200;
   }
 
   .input-filled {
-    @apply border-primary-800 bg-primary-100/25;
+    @apply border-primary-700 bg-white;
   }
 
   .button-primary {
-    @apply h-12 w-full rounded-lg bg-primary-500 px-4 text-lg font-semibold leading-[1.4] text-primary-900 transition-all duration-150 hover:bg-primary-600 active:translate-y-0.5 active:scale-[0.97] active:bg-primary-700 active:text-white disabled:cursor-not-allowed disabled:bg-neutral-100 disabled:text-neutral-200 disabled:active:translate-y-0 disabled:active:scale-100;
+    @apply h-8 w-full rounded-lg bg-primary-500 px-4 text-base font-semibold leading-none text-primary-900 transition-all duration-150 hover:bg-primary-600 active:translate-y-0.5 active:scale-[0.97] active:bg-primary-700 active:text-white disabled:cursor-not-allowed disabled:bg-neutral-100 disabled:text-neutral-200 disabled:active:translate-y-0 disabled:active:scale-100;
   }
 
   .button-primary.button-clicked {

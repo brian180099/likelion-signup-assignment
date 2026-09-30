@@ -2,8 +2,8 @@ export default function Input({ label, type = 'text', placeholder, value, onChan
   const isFilled = value.length > 0;
 
   return (
-    <div className="flex w-full flex-col gap-2">
-      <label htmlFor={name} className="body-sm font-semibold text-neutral-500">{label}</label>
+    <div className="flex w-full flex-col gap-1.5">
+      <label htmlFor={name} className="text-sm font-semibold leading-none text-neutral-100">{label}</label>
       <input
         id={name}
         name={name}

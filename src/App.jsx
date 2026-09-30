@@ -21,21 +21,22 @@ export default function App() {
   };
 
   return (
-    <main className="min-h-screen bg-primary-100 px-5 py-12 sm:py-20">
-      <section className="mx-auto w-full max-w-[460px] rounded-3xl border border-primary-200 bg-white p-6 shadow-[0_24px_70px_rgba(3,51,42,0.12)] sm:p-10">
-        <header className="mb-9">
-          <p className="mb-2 text-sm font-semibold tracking-[0.16em] text-primary-700">LIKELION</p>
-          <h1 className="title-sm text-primary-900 sm:text-4xl">회원가입</h1>
-          <p className="body-md mt-3 text-neutral-300">필요한 정보를 입력하고 계정을 만들어보세요.</p>
+    <main className="flex min-h-screen items-center justify-center bg-white px-5 py-10">
+      <section className="w-full max-w-[274px] bg-primary-100 p-4">
+        <div className="bg-white px-4 py-7">
+          <header className="mx-auto mb-5 w-[176px]">
+          <p className="mb-2 text-[9px] font-semibold leading-none tracking-[0.18em] text-primary-700">LIKELION</p>
+          <h1 className="text-2xl font-semibold leading-[1.2] text-primary-900">회원가입</h1>
+          <p className="mt-1.5 text-[10px] font-normal leading-[1.4] text-neutral-300">필요한 정보를 입력하세요</p>
         </header>
 
-        <form className="flex flex-col gap-5" onSubmit={handleSubmit}>
+        <form className="mx-auto flex w-[176px] flex-col gap-3" onSubmit={handleSubmit}>
           <Input label="이름" name="name" placeholder="이름을 입력해주세요" value={form.name} onChange={handleChange} autoComplete="name" />
           <Input label="이메일" name="email" type="email" placeholder="이메일을 입력해주세요" value={form.email} onChange={handleChange} autoComplete="email" />
           <Input label="비밀번호" name="password" type="password" placeholder="비밀번호를 입력해주세요" value={form.password} onChange={handleChange} autoComplete="new-password" />
           <Input label="비밀번호 확인" name="passwordConfirm" type="password" placeholder="비밀번호를 다시 입력해주세요" value={form.passwordConfirm} onChange={handleChange} autoComplete="new-password" />
 
-          <div className="mt-3">
+          <div className="mt-6">
             <Button
               text="회원가입"
               type="submit"
@@ -44,8 +45,9 @@ export default function App() {
             />
           </div>
 
-          {submitted && <p className="body-sm text-center font-semibold text-primary-800" role="status">입력이 완료되었습니다.</p>}
+          {submitted && <p className="text-center text-[10px] font-semibold text-primary-800" role="status">입력이 완료되었습니다.</p>}
         </form>
+        </div>
       </section>
     </main>
   );
